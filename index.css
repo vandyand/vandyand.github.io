@@ -1,3 +1,21 @@
-* {
-    background-color:lightblue;
+:root{
+    --color1: coral;
+    --color2: teal;
+    --color3: aqua;
+}
+
+body {
+    background-color:var(--color2);
+}
+
+body {
+    margin:10%;
+}
+
+.card {
+    border:5px solid var(--color1);
+    border-radius: 1em;
+    background-color: var(--color3);
+    margin-bottom:5%;
+    padding:1%;
 }
