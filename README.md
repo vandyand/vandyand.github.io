@@ -1,1 +1,1 @@
-Portfolio site for Andrew Van Dyke
+Portfolio site for Andrew Van Dyke the Inquisitive
