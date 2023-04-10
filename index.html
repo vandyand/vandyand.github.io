@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #container {
+            display: flex;
+        }
+        #sidePanel {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="gameCanvas" width="800" height="800"></canvas>
+        <div id="sidePanel">
+            <button id="pausePlayButton">Pause</button>
+            <button id="resetButton">Reset</button>
+            <button id="stepButton" disabled>Step</button>
+            <label for="speedRange">Speed: <span id="speedPercentage">50%</span></label>
+            <input type="range" id="speedRange" min="1" max="100" value="50">
+            <label for="zoomRange">Zoom:</label>
+            <input type="range" id="zoomRange" min="1" max="7" value="4">
+        </div>
+    </div>
+    <script src="game-of-life.js"></script>
+</body>
+</html>
